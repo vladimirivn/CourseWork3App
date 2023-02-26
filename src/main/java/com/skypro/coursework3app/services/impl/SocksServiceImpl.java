@@ -7,6 +7,7 @@ import com.skypro.coursework3app.model.socks.SocksBatch;
 import com.skypro.coursework3app.model.socks.SocksColor;
 import com.skypro.coursework3app.model.socks.SocksSize;
 import com.skypro.coursework3app.repository.SocksRepository;
+import com.skypro.coursework3app.services.FileService;
 import com.skypro.coursework3app.services.SavingOperationService;
 import com.skypro.coursework3app.services.SocksService;
 
@@ -27,7 +28,7 @@ import java.util.Map;
 public class SocksServiceImpl implements SocksService {
     private final SocksRepository socksRepository;
     private final ValidationService validationService;
-    private final FileServiceImpl filesService;
+    private final FileService filesService;
     private final SavingOperationService operationService;
 
     @Value("${path.to.data.file}")
@@ -80,7 +81,7 @@ public class SocksServiceImpl implements SocksService {
     }
 
     @Override
-    public File ExportFile() throws IOException {
+    public File exportFile() throws IOException {
         return filesService.saveToFile(socksRepository.getList(), Path.of(dataFilePath, dataFileName)).toFile();
     }
 

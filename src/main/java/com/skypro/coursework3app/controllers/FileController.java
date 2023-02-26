@@ -36,7 +36,7 @@ public class FileController {
     })
     public ResponseEntity<InputStreamResource> downloadDataFile() {
         try {
-            File file = socksService.ExportFile();
+            File file = socksService.exportFile();
             InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
             return ResponseEntity.ok()
                     .contentType(MediaType.APPLICATION_JSON)
@@ -73,7 +73,7 @@ public class FileController {
     })
     public ResponseEntity<InputStreamResource> downloadSavingOperationJsonFile() {
         try {
-            File file = savingOperationService.ExportFile();
+            File file = savingOperationService.exportFile();
             InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
             return ResponseEntity.ok()
                     .contentType(MediaType.APPLICATION_JSON)

@@ -45,7 +45,7 @@ public class SavingOperationServiceImpl implements SavingOperationService {
     }
 
     @Override
-    public File ExportFile() throws IOException {
+    public File exportFile() throws IOException {
         return filesService.saveToFile(savingOperationList, Path.of(dataFilePath, dataFileName)).toFile();
     }
 

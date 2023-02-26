@@ -15,7 +15,7 @@ public interface SocksService {
     int writeOffDefectiveOfGoods(SocksBatch socksBatch); // Дефект
     int getTotalOfGoods(SocksColor socksColor, SocksSize size, int cottonMin, int cottonMax); // Всего
 
-    File ExportFile() throws IOException;
+    File exportFile() throws IOException;
     void uploadFile(MultipartFile file) throws IOException;
 
 

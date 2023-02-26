@@ -1,0 +1,38 @@
+[
+  {
+    "operationType": "ACCEPTANCE",
+    "socksBatch": {
+      "socks": {
+        "color": "WHITE",
+        "size": "S",
+        "cottonPart": 80
+      },
+      "quantity": 100
+    },
+    "dateTime": "2023-02-25T23:46:05.8445588"
+  },
+  {
+    "operationType": "WRITE_OFF",
+    "socksBatch": {
+      "socks": {
+        "color": "WHITE",
+        "size": "S",
+        "cottonPart": 80
+      },
+      "quantity": 20
+    },
+    "dateTime": "2023-02-25T23:46:33.8359666"
+  },
+  {
+    "operationType": "ISSUANCE",
+    "socksBatch": {
+      "socks": {
+        "color": "WHITE",
+        "size": "S",
+        "cottonPart": 80
+      },
+      "quantity": 50
+    },
+    "dateTime": "2023-02-25T23:46:52.71342"
+  }
+]

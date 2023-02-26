@@ -11,6 +11,6 @@ public interface SavingOperationService {
     void acceptance(SocksBatch socksBatch);
     void issuance(SocksBatch socksBatch);
     void writeOff(SocksBatch socksBatch);
-    File ExportFile() throws IOException;
+    File exportFile() throws IOException;
     void uploadFile(MultipartFile file) throws IOException;
 }
